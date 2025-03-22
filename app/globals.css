@@ -1,26 +1,60 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@keyframes slide-in {
+    from {
+        transform: translateY(40%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.animated-div {
+    animation: slide-in 0.5s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.perspective {
+    perspective: 850px;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.logo-shadow{
+    --tw-drop-shadow: drop-shadow(0px 25px 15px rgb(0 0 0 / 100));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@keyframes logo-pop-left{
+    from {
+        transform: translateY(-200px) rotateY(50deg);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px) rotateY(50deg);
+        opacity: 1;
+    }
+}
+
+.animate-logo-pop-left{
+    animation: logo-pop-left 0.8s ease;
+    transform: translateY(0px) rotateY(50deg);
+}
+
+@keyframes logo-pop-right{
+    from {
+        transform: translateY(-200px) rotateY(-50deg);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px) rotateY(-50deg);
+        opacity: 1;
+    }
+}
+
+.animate-logo-pop-right{
+    animation: logo-pop-right 0.8s ease;
+    transform: translateY(0px) rotateY(-50deg);
 }
