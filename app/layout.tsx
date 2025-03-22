@@ -1,7 +1,6 @@
 import '../app/globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import SearchBar from './components/searchBar/SearchBar'
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -35,7 +34,6 @@ export default function RootLayout({
 
             {/* Main Content (Children) */}
             <main >
-              <SearchBar/>
               {children}
             </main>
           </div>

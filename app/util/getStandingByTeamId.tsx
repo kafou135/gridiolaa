@@ -1,6 +1,6 @@
 import { Standing } from '@/types';
 import 'server-only';
-import getStandings from './getStanding';
+import getStandings from './getStandings1';
 import moment from 'moment';
 
 
