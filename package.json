@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@upstash/redis": "^1.34.6",
     "autoprefixer": "^10.4.21",
     "framer-motion": "^12.5.0",
+    "heroicons-react": "^1.4.1",
     "lucide-react": "^0.483.0",
     "moment": "^2.30.1",
     "next": "15.2.3",
