@@ -5,14 +5,8 @@ import getH2H from "@/app/util/getH2H";
 import getLineup from "@/app/util/getLineup";
 import { Events, Fixture, H2H, Lineups } from "@/types";
 
-// Define the PageProps type for dynamic route params
-type PageProps = {
-  params: {
-    id: string;
-  };
-};
-
-export default async function Page({ params }: PageProps) {
+// Remove PageProps type definition and let Next.js infer types
+export default async function Page({ params }: { params: { id: string } }) {
   const fixtureByFixtureId: Fixture | undefined = await getFixtureByFixtureId(parseInt(params.id));
   
   if (!fixtureByFixtureId) {
