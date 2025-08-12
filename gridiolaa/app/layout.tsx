@@ -10,7 +10,7 @@ const API_KEY = process.env.API_KEY!;
 
 export const metadata: Metadata = {
   title: 'GRIDIOLA', // Updated app name
-  description: 'Your go-to app for football stats, live matches, and team insights.',
+  description: 'Taylor Swift – Latest Album News.',
   icons:{
     icon:['/khdam1.png?v=4'],
     apple:['/apple-touch-icon1.png?v=4'],
@@ -46,11 +46,11 @@ export default async function RootLayout({
   }}
 />
 
-        <meta property="og:title" content="My Awesome Football App" />
-        <meta name="twitter:title" content="Live Football Scores & Fixtures - My App" />
+        <meta property="og:title" content="Taylor Swift – Latest Album News" />
+        <meta name="twitter:title" content="Taylor Swift – Latest Album News" />
         {/* Optional: other Twitter/OpenGraph tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:description" content="Get live scores, upcoming fixtures, and league updates." />
+        <meta name="twitter:description" content="Taylor Swift – Latest Album News" />
       <meta name="google-site-verification" content="puUhOSsCARgxfUFDNfef5wmOccrx4Wc92YxDJw0rzXo" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",

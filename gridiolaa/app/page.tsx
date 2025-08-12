@@ -21,10 +21,10 @@ return (
     <div>
       <Head>
         <title>Gridiola</title>
-        <meta name="description" content="Your go-to app for football stats, live matches, and team insights." />
+        <meta name="description" content="Taylor Swift – Latest Album News" />
       </Head>
       <RefreshButton/>
-    <StandingsAndFixtures filteredFixtures_2={filteredFixtures_2} />
+    <StandingsAndFixtures/>
     
       </div>
   )  }
@@ -33,10 +33,10 @@ return (
     <div>
       <Head>
         <title>Gridiola</title>
-        <meta name="description" content="Your go-to app for football stats, live matches, and team insights." />
+        <meta name="description" content="Taylor Swift – Latest Album News" />
       </Head>
       <RefreshButton/>
-    <StandingsAndFixtures filteredFixtures_2={filteredFixtures_2} />
+    <StandingsAndFixtures />
     
       </div>
   )
