@@ -1,86 +1,56 @@
-"use client"
-import { useEffect, useState } from "react";
-import Link from "next/link";
-
-interface Article {
-  urlToImage?: string;
-  title?: string;
-  description?: string;
-  url: string;
-}
-
 export default function TaylorSwiftTrend() {
-  const [articles, setArticles] = useState<Article[]>([]);
-
-  useEffect(() => {
-    async function fetchTrend() {
-      try {
-        const res = await fetch(
-          `https://newsapi.org/v2/everything?q=Taylor%20Swift%20new%20album&sortBy=publishedAt&apiKey=36da86be9aa44f77a1d7eaa022b5a8b0`
-        );
-        const data = await res.json();
-        setArticles(data.articles || []);
-      } catch (err) {
-        console.error("Error fetching trend:", err);
-      }
-    }
-    fetchTrend();
-  }, []);
-
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      <h1 style={{ textAlign: "center", color: "#b82c8f" }}>
-        Taylor Swift – Latest Album News
+    <main style={{
+      maxWidth: '720px',
+      margin: '40px auto',
+      fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+      color: '#e2e7e7ff',
+      lineHeight: 1.6,
+      padding: '0 20px',
+    }}>
+      <h1 style={{ fontSize: '2.8rem', color: '#cac4c9ff', marginBottom: '15px' }}>
+        🎤 Taylor Swift Drops New Album: <br /> <em>The Life of a Showgirl</em>
       </h1>
+      <section style={{ marginBottom: '25px' }}>
+        <h2 style={{ fontSize: '1.6rem', color: '#ece6ecff' }}>Announcement Details</h2>
+        <p>
+          Taylor Swift revealed her 12th studio album, <strong>The Life of a Showgirl</strong>, on August 12, 2025, during a surprise appearance on the <em>New Heights</em> podcast hosted by NFL stars Travis and Jason Kelce.  
+          The announcement came at exactly 12:12 a.m. ET, referencing her iconic use of the number 12.
+        </p>
+        <p>
+          Her official website featured a glittering orange countdown, and the Empire State Building was lit up in orange to celebrate the release.
+        </p>
+      </section>
 
-      {articles.length === 0 ? (
-        <p style={{ textAlign: "center" }}>Loading latest news...</p>
-      ) : (
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-            gap: "20px",
-          }}
-        >
-          {articles.map((article, index) => (
-            <div
-              key={index}
-              style={{
-                border: "1px solid #ccc",
-                borderRadius: "10px",
-                overflow: "hidden",
-                background: "#fff",
-                boxShadow: "0px 2px 8px rgba(0,0,0,0.1)",
-              }}
-            >
-              {article.urlToImage && (
-                <img
-                  src={article.urlToImage}
-                  alt={article.title}
-                  style={{ width: "100%", height: "200px", objectFit: "cover" }}
-                />
-              )}
-              <div style={{ padding: "15px" }}>
-                <h3 style={{ fontSize: "18px", marginBottom: "10px" }}>
-                  {article.title}
-                </h3>
-                <p style={{ fontSize: "14px", color: "#555" }}>
-                  {article.description}
-                </p>
-                <Link
-                  href={article.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: "#b82c8f", fontWeight: "bold" }}
-                >
-                  Read more →
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
+      <section style={{ marginBottom: '25px' }}>
+        <h2 style={{ fontSize: '1.6rem', color: '#ede9eeff' }}>Album Theme & Collaborations</h2>
+        <ul>
+          <li>Visuals center on a vibrant <strong>orange and mint-green</strong> color palette.</li>
+          <li>Physical copies available for preorder include <em>vinyl, cassette, and CD editions</em> with special posters.</li>
+          <li>Production rumors include <strong>Max Martin</strong> and <strong>Shellback</strong>.</li>
+          <li>A surprise collaboration with singer <strong>Sabrina Carpenter</strong> has fans buzzing.</li>
+        </ul>
+      </section>
+
+      <section style={{ marginBottom: '25px' }}>
+        <h2 style={{ fontSize: '1.6rem', color: '#efeef0ff' }}>Release Info</h2>
+        <p>
+          Preorders are shipping before October 13, 2025. The official album release date is yet to be announced.
+        </p>
+      </section>
+
+      <section style={{ marginBottom: '25px' }}>
+        <h2 style={{ fontSize: '1.6rem', color: '#eae5ebff' }}>Why This Matters</h2>
+        <p>
+          This album marks a new chapter after Swift’s historic reclaiming of her masters and follows her record-breaking streaming and touring milestones. The unique visual theme and teased collaborations have already sparked massive excitement worldwide.
+        </p>
+      </section>
+
+      
+
+      <footer style={{ fontSize: '0.9rem', color: '#666' }}>
+        <p>Content based on news reports from August 2025.</p>
+      </footer>
+    </main>
   );
 }
