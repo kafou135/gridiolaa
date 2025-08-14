@@ -1,3 +1,4 @@
+
 // app/taylor-swift-trend/page.js
 export const metadata = {
   title: "Taylor Swift Drops New Album: The Life of a Showgirl",
