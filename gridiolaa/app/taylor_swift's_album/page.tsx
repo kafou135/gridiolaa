@@ -1,4 +1,4 @@
-import TaylorSwiftTrendContent from "./components/home2/StandingsAndFixtures";
+import TaylorSwiftTrendContent from "./components/taylorswift";
 
 export const metadata = {
   title: "Taylor Swift Drops New Album: The Life of a Showgirl",
