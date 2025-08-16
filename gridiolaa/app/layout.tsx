@@ -108,7 +108,7 @@ export default async function RootLayout({
         }}
       />
         {/* Simple Background */}
-        <div className="min-h-screen bg-gray-900"> {/* Changed to solid dark background */}
+        <div className="min-h-screen bg-gray-200"> {/* Changed to solid dark background */}
           {/* Content */}
           <div className="relative z-10">
             {/* SearchBar */}
