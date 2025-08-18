@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import AutoRefresher from "@/app/components/AutoRefresher";
-
+import Home from "./components/page";
 export const revalidate = 900; // ISR: re-generate every 15 min
 
 export const metadata: Metadata = {
@@ -199,6 +199,7 @@ export default async function Page() {
   };
 
   return (
+    <>
     <main className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-8 md:py-12 space-y-8">
       <AutoRefresher interval={60000} />
 
@@ -314,5 +315,7 @@ export default async function Page() {
         Server-rendered with ISR. Facts reflect latest reporting at build time.
       </footer>
     </main>
+    <Home/>
+    </>
   );
 }

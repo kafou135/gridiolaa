@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import AutoRefresher from "@/app/trends/gloria-gaynor/components/AutoRefresher";
-
+import Home from "./components/page";
 // ---------- Page metadata ----------
 export const metadata: Metadata = {
   title: "Gloria Gaynor & the 2025 Kennedy Center Honors — Trend Brief",
@@ -151,6 +151,7 @@ export default async function Page() {
   const generatedAt = new Date().toISOString();
 
   return (
+    <>
     <main className="mx-auto max-w-5xl px-5 py-8 text-gray-900">
       <Suspense fallback={null}>
         <AutoRefresher />
@@ -266,5 +267,7 @@ export default async function Page() {
         </p>
       </footer>
     </main>
+    <Home/>
+    </>
   );
 }

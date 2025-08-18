@@ -1,0 +1,42 @@
+/* For name (small like input) */
+.input-small {
+  width: 100%;
+  height: 50px;              /* small height */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 12px;
+
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+  resize: none;              /* prevent resizing */
+}
+
+.input-small:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 5px rgba(79, 70, 229, 0.4);
+  outline: none;
+}
+
+/* For advice/message (large textarea) */
+.input-large {
+  width: 100%;
+  min-height: 120px;         /* bigger height */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+  resize: vertical;          /* allow user to resize vertically */
+}
+
+.input-large:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 6px rgba(79, 70, 229, 0.5);
+  outline: none;
+}

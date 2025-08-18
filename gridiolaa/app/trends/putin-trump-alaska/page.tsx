@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import AutoRefresher from "@/app/components/AutoRefresher";
-
+import Home from "./components/page";
 // --- ISR config (SSG with revalidate) ---
 export const revalidate = 300; // revalidate every 5 minutes
 
@@ -198,6 +198,7 @@ export default async function Page() {
   };
 
   return (
+    <>
     <main className="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 py-8 md:py-12 space-y-8">
       {/* safe client refresher (1s) */}
       <AutoRefresher interval={1000} />
@@ -330,5 +331,7 @@ export default async function Page() {
         Built with Next.js App Router. Server-rendered with incremental static regeneration.
       </footer>
     </main>
+    <Home/>
+    </>
   );
 }
