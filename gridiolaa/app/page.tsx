@@ -1,4 +1,4 @@
-import TaylorSwiftTrendContent from "./components/home2/StandingsAndFixtures";
+import Hurrican from "./trends/hurricane-erin/page"
 import Home from "./components/FeedBack";
 export const metadata = {
   title: "Taylor Swift Drops New Album: The Life of a Showgirl",
@@ -8,7 +8,7 @@ export const metadata = {
 export default function Page() {
   return( 
     <>
-  <TaylorSwiftTrendContent />
+  <Hurrican/>
   <Home/>
   </>);
 }
