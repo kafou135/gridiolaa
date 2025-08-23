@@ -1,15 +1,13 @@
-// components/NewsletterForm.tsx
 "use client";
-
 import { useState } from "react";
 
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const subscribe = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus("idle");
+    setMessage("Sending...");
 
     const res = await fetch("/api/newsletter", {
       method: "POST",
@@ -17,37 +15,29 @@ export default function NewsletterForm() {
       body: JSON.stringify({ email }),
     });
 
+    const data = await res.json();
     if (res.ok) {
-      setStatus("success");
+      setMessage("✅ Subscribed successfully!");
       setEmail("");
     } else {
-      setStatus("error");
+      setMessage("❌ " + (data.error || "Failed to subscribe"));
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-3 max-w-md">
-      <label className="block font-semibold">Subscribe to our newsletter</label>
+    <form onSubmit={subscribe} className="p-4 bg-gray-100 rounded-lg">
       <input
         type="email"
-        required
-        placeholder="Your email"
+        placeholder="Enter your email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="w-full border rounded px-3 py-2"
+        required
+        className="p-2 border rounded mr-2"
       />
-      <button
-        type="submit"
-        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-      >
+      <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded">
         Subscribe
       </button>
-      {status === "success" && (
-        <p className="text-green-600">Subscribed successfully!</p>
-      )}
-      {status === "error" && (
-        <p className="text-red-600">Something went wrong. Try again.</p>
-      )}
+      {message && <p className="mt-2 text-sm">{message}</p>}
     </form>
   );
 }
