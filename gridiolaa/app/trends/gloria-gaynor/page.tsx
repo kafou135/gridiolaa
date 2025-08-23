@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import AutoRefresher from "@/app/trends/gloria-gaynor/components/AutoRefresher";
 import Home from "./components/page";
+import NewsletterForm from "@/app/components/NewsletterForm";
 // ---------- Page metadata ----------
 export const metadata: Metadata = {
   title: "Gloria Gaynor & the 2025 Kennedy Center Honors — Trend Brief",
@@ -267,6 +268,7 @@ export default async function Page() {
         </p>
       </footer>
     </main>
+    <NewsletterForm/>
     <Home/>
     </>
   );

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import AutoRefresher from "@/app/components/AutoRefresher";
 import Home from "./components/page";
+import NewsletterForm from "@/app/components/NewsletterForm";
+
 export const revalidate = 900; // ISR every 15 min
 
 export const metadata: Metadata = {
@@ -239,6 +241,7 @@ export default async function Page() {
         Sources: NHC/NOAA, Weather.com, ABC/CBS, PBS. Always follow official guidance.
       </footer>
     </main>
+    <NewsletterForm/>
     <Home/>
     </>
   );

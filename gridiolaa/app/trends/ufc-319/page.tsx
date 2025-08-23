@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import AutoRefresher from "@/app/components/AutoRefresher";
 import Home from "./components/page";
+import NewsletterForm from "@/app/components/NewsletterForm";
 export const revalidate = 900; // ISR: re-generate every 15 min
 
 export const metadata: Metadata = {
@@ -315,6 +316,7 @@ export default async function Page() {
         Server-rendered with ISR. Facts reflect latest reporting at build time.
       </footer>
     </main>
+    <NewsletterForm/>
     <Home/>
     </>
   );

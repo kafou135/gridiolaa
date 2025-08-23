@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import AutoRefresher from "@/app/components/AutoRefresher";
 import Home from "@/app/components/FeedBack";
+import NewsletterForm from "@/app/components/NewsletterForm";
 
 export const revalidate = 900; // ISR every 15 min
 
@@ -189,7 +190,7 @@ export default async function Page() {
           Sources: Reddit, White House, Public Media. Always refer to official sources for verification.
         </footer>
       </main>
-
+<NewsletterForm/>
       <Home />
     </>
   );

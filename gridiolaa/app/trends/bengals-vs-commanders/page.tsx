@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import AutoRefresher from "@/app/components/AutoRefresher";
 import Home from "@/app/components/FeedBack";
+import NewsletterForm from "@/app/components/NewsletterForm";
 
 export const revalidate = 900; // ISR every 15 min
 
@@ -246,6 +247,7 @@ export default async function Page() {
           Sources: ESPN, NFL.com, CBS Sports, Yahoo Sports. Always check official broadcasters for live coverage.
         </footer>
       </main>
+      <NewsletterForm/>
       <Home />
     </>
   );
