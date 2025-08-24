@@ -266,9 +266,9 @@ export default async function Page() {
         <p>
           Sources linked above. This page is informational and not affiliated with the Kennedy Center.
         </p>
+    <NewsletterForm/>
       </footer>
     </main>
-    <NewsletterForm/>
     <Home/>
     </>
   );

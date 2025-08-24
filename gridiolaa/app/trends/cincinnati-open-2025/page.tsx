@@ -218,8 +218,10 @@ export default async function Page() {
           </Section>
         </aside>
       </div>
+      <footer>
+<NewsletterForm/>
+      </footer>
     </main>
-    <NewsletterForm/>
     <Home/>
     </>
   );

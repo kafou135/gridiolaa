@@ -176,9 +176,9 @@ export default async function Page() {
 
         <footer className="pt-2 text-sm text-gray-500">
           Sources: Reddit, The PFA, Arsenal FC, Public Media.
+<NewsletterForm/>
         </footer>
       </main>
-<NewsletterForm/>
       <Home />
     </>
   );

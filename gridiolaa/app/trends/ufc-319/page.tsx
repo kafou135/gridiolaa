@@ -314,9 +314,9 @@ export default async function Page() {
 
       <footer className="pt-2 text-sm text-gray-500">
         Server-rendered with ISR. Facts reflect latest reporting at build time.
+    <NewsletterForm/>
       </footer>
     </main>
-    <NewsletterForm/>
     <Home/>
     </>
   );

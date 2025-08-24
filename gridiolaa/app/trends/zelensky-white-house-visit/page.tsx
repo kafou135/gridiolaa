@@ -188,9 +188,9 @@ export default async function Page() {
 
         <footer className="pt-2 text-sm text-gray-500">
           Sources: Reddit, White House, Public Media. Always refer to official sources for verification.
+<NewsletterForm/>
         </footer>
       </main>
-<NewsletterForm/>
       <Home />
     </>
   );

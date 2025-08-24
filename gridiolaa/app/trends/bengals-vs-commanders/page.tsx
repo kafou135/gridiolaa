@@ -245,9 +245,9 @@ export default async function Page() {
 
         <footer className="pt-2 text-sm text-gray-500">
           Sources: ESPN, NFL.com, CBS Sports, Yahoo Sports. Always check official broadcasters for live coverage.
+      <NewsletterForm/>
         </footer>
       </main>
-      <NewsletterForm/>
       <Home />
     </>
   );

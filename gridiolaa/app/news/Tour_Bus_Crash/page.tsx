@@ -266,10 +266,10 @@ export default async function Page() {
 
         <footer className="pt-2 text-sm text-gray-500">
           Sources linked above: AP, ABC/CBS, Spectrum Local News, WKBW, Governor's office. This page does not replace official guidance.
+      <NewsletterForm/>
         </footer>
       </main>
       {/* Keep your site's global components */}
-      <NewsletterForm/>
       <Home />
     </>
   );

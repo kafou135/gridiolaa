@@ -239,9 +239,9 @@ export default async function Page() {
 
       <footer className="pt-2 text-sm text-gray-500">
         Sources: NHC/NOAA, Weather.com, ABC/CBS, PBS. Always follow official guidance.
+    <NewsletterForm/>
       </footer>
     </main>
-    <NewsletterForm/>
     <Home/>
     </>
   );
