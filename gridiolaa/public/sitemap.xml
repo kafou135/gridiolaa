@@ -84,5 +84,11 @@
   <changefreq>daily</changefreq>
   <priority>0.7</priority>
 </url>
+<url>
+  <loc>https://gridiola.com/news/Raja_Jackson</loc>
+  <lastmod>2025-08-24</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.7</priority>
+</url>
 
 </urlset>
