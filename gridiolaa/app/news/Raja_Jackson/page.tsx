@@ -39,7 +39,7 @@ async function getData() {
   ];
 
   const quickFacts: Fact[] = [
-    { label: "Date", value: "August 23, 2025 (local)" },
+    { label: "Date", value: "August 24, 2025 (local)" },
     { label: "Location", value: "Los Angeles, CA — Knokx Pro Wrestling event" },
     { label: "Primary Individuals", value: "Raja Jackson; Stuart “Syko Stu” Smith" },
     { label: "Current Snapshot", value: "Viral clip; media coverage; statements and health updates via reports" },
@@ -128,7 +128,7 @@ export default async function Page() {
     "@type": "NewsArticle",
     headline: "Raja Jackson Incident (2025) — Timeline & Reactions",
     about: ["Raja Jackson", "Rampage Jackson", "Syko Stu", "Knokx Pro Wrestling"],
-    datePublished: "2025-08-23",
+    datePublished: "2025-08-24T14:00:00+01:00",
     dateModified: new Date().toISOString().slice(0, 10),
     author: { "@type": "Organization", name: "YourSite" },
   };
