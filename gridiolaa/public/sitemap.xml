@@ -3,7 +3,7 @@
   <url>
     <loc>https://gridiola.com/</loc>
     <lastmod>2025-08-26</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
@@ -93,6 +93,12 @@
 <url>
   <loc>https://gridiola.com/news/Annunciation_Catholic_School</loc>
   <lastmod>2025-08-27</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://www.gridiola.com/news/Annunciation_Catholic_School</loc>
+  <lastmod>2025-08-28</lastmod>
   <changefreq>daily</changefreq>
   <priority>0.7</priority>
 </url>
