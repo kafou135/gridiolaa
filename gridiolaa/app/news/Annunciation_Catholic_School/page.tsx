@@ -131,8 +131,8 @@ export default async function Page() {
     "@type": "NewsArticle",
     headline: "Annunciation Catholic School Shooting (Minneapolis, 2025) — Timeline & Sources",
     about: ["Annunciation Catholic School", "Minneapolis shooting", "Tim Walz"],
-    datePublished: new Date().toISOString(),
-    dateModified: new Date().toISOString(),
+    datePublished: "2025-08-27T20:00:00+01:00",
+    dateModified: "2025-08-27T20:00:00+01:00",
     author: { "@type": "Organization", name: "YourSite" },
   };
 
@@ -181,7 +181,7 @@ export default async function Page() {
               </div>
             </Section>
 
-            
+
             <Section title="Live Coverage & Primary Sources">
               <ul className="list-disc pl-5 space-y-2">
                 {data.liveCoverage.map((l) => (
