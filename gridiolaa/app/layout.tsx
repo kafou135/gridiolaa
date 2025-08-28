@@ -3,7 +3,6 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { AllFixtures, AllLiveStates } from '@/types'
 import Script from 'next/script';
-import SearchBar from './components/searchBar/SearchBar';
 const inter = Inter({ subsets: ['latin'] });
 const API_KEY = process.env.API_KEY!;
 
@@ -117,7 +116,6 @@ export default async function RootLayout({
 
             {/* Main Content (Children) */}
             <main className="px-4 py-8 sm:px-6 lg:px-8">
-              <SearchBar/>
              {children}
             </main>
           </div>
