@@ -147,14 +147,14 @@ export default async function Page() {
               </ul>
             </Section>
 
-            <Section title="Charlie Kirk — What We Know">
-              <div className="bg-white p-6 rounded-2xl shadow-md text-gray-900 leading-relaxed space-y-4">
-                <p>Charlie Kirk recently made public appearances and statements, drawing attention across social media and news outlets.</p>
-                <p>Media analysis highlights reactions from political commentators and the general public.</p>
-                <p>Videos and clips circulate widely on platforms like YouTube and Twitter, showcasing speeches and commentary.</p>
-                <p>Official statements from Turning Point USA provide direct context, while other coverage captures diverse viewpoints.</p>
-              </div>
-            </Section>
+            <Section title="Charlie Kirk Shooting — What We Know So Far">
+<div className="bg-white p-6 rounded-2xl shadow-md text-gray-900 leading-relaxed space-y-4">
+<p>Charlie Kirk, founder of Turning Point USA, was fatally shot while speaking at Utah Valley University. Witnesses described chaos as people fled the campus following the shooting.</p>
+<p>The FBI and local authorities are actively investigating the incident. Initial reports of a suspect in custody were later corrected; that individual faced obstruction of justice charges instead.</p>
+<p>Prominent figures, including President Trump and Gov. Spencer Cox, publicly condemned the shooting and mourned Kirk's death. Flags have been ordered to half-staff in his honor.</p>
+<p>Videos from attendees and rooftop vantage points provide graphic accounts. For accurate details, follow reporting from verified news outlets.</p>
+</div>
+</Section>
 
             <Section title="Key Messages (Summary)">
               <ul className="list-disc pl-5 space-y-2">{data.keyMessages.map((m) => (<li key={m}>{m}</li>))}</ul>
