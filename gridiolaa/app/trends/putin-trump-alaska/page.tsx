@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import AutoRefresher from "@/app/components/AutoRefresher";
 import Home from "./components/page";
 import NewsletterForm from "@/app/components/NewsletterForm";
+import ProductsClient from "@/app/components/ProductsClient";
 // --- ISR config (SSG with revalidate) ---
 export const revalidate = 300; // revalidate every 5 minutes
 
@@ -330,9 +331,10 @@ export default async function Page() {
 
       <footer className="pt-2 text-sm text-gray-500">
         Built with Next.js App Router. Server-rendered with incremental static regeneration.
+    <NewsletterForm/>
       </footer>
     </main>
-    <NewsletterForm/>
+    <ProductsClient/>
     <Home/>
     </>
   );

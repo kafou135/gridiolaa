@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import AutoRefresher from "@/app/components/AutoRefresher";
 import Home from "@/app/components/FeedBack";
 import NewsletterForm from "@/app/components/NewsletterForm";
+import ProductsClient from "@/app/components/ProductsClient";
 
 // Incremental Static Regeneration — refresh server-rendered HTML every 15 minutes
 export const revalidate = 900;
@@ -269,7 +270,7 @@ export default async function Page() {
       <NewsletterForm/>
         </footer>
       </main>
-      {/* Keep your site's global components */}
+      <ProductsClient/>
       <Home />
     </>
   );

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import AutoRefresher from "@/app/components/AutoRefresher";
 import Home from "@/app/components/FeedBack";
 import NewsletterForm from "@/app/components/NewsletterForm";
+import ProductsClient from "@/app/components/ProductsClient";
 
 export const revalidate = 900; // ISR every 15 min
 
@@ -248,6 +249,7 @@ export default async function Page() {
       <NewsletterForm/>
         </footer>
       </main>
+      <ProductsClient/>
       <Home />
     </>
   );
